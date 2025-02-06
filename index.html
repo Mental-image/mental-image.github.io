@@ -14,17 +14,47 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
+  <script>
+    document.addEventListener("contextmenu", (event) => event.preventDefault()); // Disable right-click
+  
+    document.addEventListener("keydown", (event) => {
+      if (
+        event.keyCode === 123 || // F12
+        (event.ctrlKey && event.shiftKey && event.keyCode === 73) || // Ctrl+Shift+I
+        (event.ctrlKey && event.shiftKey && event.keyCode === 74) || // Ctrl+Shift+J
+        (event.ctrlKey && event.keyCode === 85) // Ctrl+U (View Source)
+      ) {
+        event.preventDefault();
+      }
+    });
+  </script>
+
+<script>
+  function detectDevTools() {
+    const devtools = /./;
+    devtools.toString = function () {
+      console.log("DevTools detected!");
+      window.location.replace("about:blank"); // Redirect to blank page
+    };
+    console.log("%c", devtools);
+  }
+
+  setInterval(detectDevTools, 1000); // Check every second
+</script>
   <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="Rabbah">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="rabbah_dashboard">
+  <meta name="apple-mobile-web-app-title" content="Rabbah">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
