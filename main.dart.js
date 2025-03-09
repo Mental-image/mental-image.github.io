@@ -96735,8 +96735,13 @@ ar6(a){var s=null
 return this.vT(a,s,s,s,s)},
 arb(a){var s=null
 return this.vT(s,a,s,s,s)},
-c_(){var s=this
-return A.a8(["merchant_id",s.a,"device_model",s.b,"machine_name",s.c,"android_version",s.d,"package_name",s.e,"package_version",s.f,"terminal_id",s.r,"machine_id",s.w,"protocol_level",s.x,"location",s.y,"address",s.z,"last_log_at",s.Q.ii(),"id",s.as,"serial_number",s.at,"created_at",s.ax.ii(),"updated_at",s.ay.ii(),"merchant",s.ch.c_()],t.N,t.z)}}
+c_(){var s,r,q,p=this,o=p.Q
+o=o==null?null:o.ii()
+s=p.ax.ii()
+r=p.ay.ii()
+q=p.ch
+q=q==null?null:q.c_()
+return A.a8(["merchant_id",p.a,"device_model",p.b,"machine_name",p.c,"android_version",p.d,"package_name",p.e,"package_version",p.f,"terminal_id",p.r,"machine_id",p.w,"protocol_level",p.x,"location",p.y,"address",p.z,"last_log_at",o,"id",p.as,"serial_number",p.at,"created_at",s,"updated_at",r,"merchant",q],t.N,t.z)}}
 A.ao5.prototype={
 c_(){var s=this
 return A.a8(["id",s.a,"name",s.b,"owner_name",s.c,"owner_email",s.d],t.N,t.z)}}
@@ -96931,7 +96936,6 @@ a9Q(a,b){var s=0,r=A.M(t.H),q=this,p,o,n,m,l,k,j,i,h,g,f,e,d,c
 var $async$uy=A.N(function(a0,a1){if(a0===1)return A.J(a1,r)
 while(true)switch(s){case 0:c={}
 c.a=a
-a.a.toString
 s=2
 return A.P($.e5().$1$0(t.ka).mt(0,"devices_merchants"),$async$uy)
 case 2:p=a1
@@ -97170,7 +97174,7 @@ A.aCy.prototype={
 $0(){var s=null,r=17976931348623157e292,q=this.b,p=t.w,o=A.aH(q,B.N,p).w,n=t.p,m=A.aK(A.a([A.cP(s,B.be,B.B,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,new A.aCk(q),s,s,s,s,s,s)],n),B.l,B.bg,B.j,s),l=A.F(q).ax.a===B.x?B.aa:B.f,k=A.oq(l,m,s,!0,o.a.a/3)
 o=A.aX(12)
 m=this.a
-A.z7(A.a([A.ei(B.a4M,new A.aCl(m,q),A.it(s,s,B.Z,s,s,s,s,s,s,new A.D(A.aH(q,s,p).w.a.a/3-32,50),B.f,s,s,s,s,new A.bN(o,B.n),s,s,s,s))],n),k,A.n8(A.a([A.b7(m.d,!0,"",!1,"Serial Number",new A.aCm(),"",r),A.b7(m.e,!0,"",!1,"Device Model",new A.aCn(),"",r),A.b7(m.f,!0,"",!1,"Terminal ID",new A.aCo(),"",r)],n),32,32),q,t.z)},
+A.z7(A.a([A.ei(B.a4M,new A.aCl(m,q),A.it(s,s,B.Z,s,s,s,s,s,s,new A.D(A.aH(q,s,p).w.a.a/3-32,50),B.f,s,s,s,s,new A.bN(o,B.n),s,s,s,s))],n),k,A.n8(A.a([A.b7(m.d,!0,"",!1,"Serial Number",new A.aCm(),"",r),A.b7(m.e,!0,"",!1,"Device Model",new A.aCn(),"",r),A.b7(m.f,!0,"Optional",!1,"Terminal ID",new A.aCo(),"",r)],n),32,32),q,t.z)},
 $S:0}
 A.aCk.prototype={
 $0(){var s=A.cV(this.a).c
