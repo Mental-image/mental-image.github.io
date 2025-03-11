@@ -27890,7 +27890,7 @@ s=t.ne
 p.kI(B.Ft,s)
 p.$1$0(s).toString
 p.$1$0(s).toString
-s=new A.Py("https://dev.rabbah.sa/",B.Mq,p.$1$0(o))
+s=new A.Py("https://prod.rabbah.sa/",B.Mq,p.$1$0(o))
 r=$.ad.i(0,B.Zl)
 q=r==null?null:t.Kb.a(r).$0()
 s.d=q==null?new A.Qi(A.aI(t.lZ)):q
